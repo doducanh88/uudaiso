@@ -36,9 +36,9 @@ h5 {
     font-size: 12px;
 }
 
-.btn {
+.btn-1 .btn {
     margin-top: 2px;
-    width: 100px;
+    width: 150px;
     font-size: 10px;
     height: 25px;
     line-height: 25px;
@@ -97,4 +97,74 @@ h5 {
 .money {
     margin-top: 10px;
     font-weight: 600;
+}
+
+h4 {
+    display: block;
+    text-align: center;
+}
+
+.blog p {
+    display: block;
+    text-align: center;
+}
+
+.img1 {
+    position: relative;
+}
+
+.descrip {
+    border: 1px rgb(235, 219, 219) solid;
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    z-index: 1;
+    background-color: white;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+.descrip p {
+    text-align: left;
+    display: block;
+}
+
+h6 {
+    display: block;
+    font-weight: 600;
+}
+
+.img2 {
+    position: relative;
+    height: ;
+}
+
+.descrip1 {
+    border: 1px rgb(235, 219, 219) solid;
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    z-index: 1;
+    background-color: white;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+input::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    line-height: 40;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.footer-1 li {
+    font-size: 11px;
+    margin-left: 10%;
 }
