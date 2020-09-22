@@ -1,0 +1,100 @@
+.nav-content {
+    box-shadow: 0px 0px 10px 0px rgb(201, 171, 171);
+}
+
+.tabs .tab {
+    text-align: left !important;
+    width: 10%;
+}
+
+.tabs .tab a {
+    padding: 0;
+}
+
+h5 {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 10px 10px 10px;
+}
+
+.head {
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.col p {
+    margin: 0;
+    font-size: 12px;
+    color: black;
+}
+
+.head-1 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 12px;
+}
+
+.btn {
+    margin-top: 2px;
+    width: 100px;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+    border: black 1px solid;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.shopnow {
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px !important;
+}
+
+.ho-ver {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.img-show {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-dis {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.ho-ver:hover .img-dis,
+.ho-ver:active .img-dis {
+    top: 0;
+    left: 0%;
+    transition: 500ms;
+}
+
+.ho-ver:hover .img-show,
+.ho-ver:active .img-show {
+    top: 0;
+    left: -100%;
+    transition: 500ms;
+}
+
+.money {
+    margin-top: 10px;
+    font-weight: 600;
+}
