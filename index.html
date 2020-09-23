@@ -10,57 +10,66 @@
     <link href="https://fonts.googleapis.com/css?family=Be Vietnam:400,700&display=swap&subset=vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="angular.min.js"></script>
 </head>
 
-<body>
+<body ng-app="uudaiso" ng-controller="uudaisoCtrl">
     <nav style="background-color: rgb(35, 31, 32); box-shadow: none;">
         <div class="nav-wrapper container">
             <a href="#!" class="brand-logo">Habitat</a>
+
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="#"><i class="material-icons">search</i></a>
+                <li ng-show="result">
+                    <form class="col s12">
+                        <div class="row" style="margin-bottom: 0 !important;">
+                            <div class="input-field col s12">
+                                <input id="icon_prefix" type="text" placeholder="search" class="validate" style="background-color: rgb(79, 76, 77); border-radius: 8px;">
+                            </div>
+                        </div>
+                    </form>
                 </li>
-                <li><a href="sass.html">wishlist</a></li>
-                <li><a href="badges.html">store</a></li>
-                <li><a href="collapsible.html">account</a></li>
-                <li><a href="mobile.html">bag</a></li>
+                <li><i class="material-icons prefix" ng-click="openFunc()">search</i></li>
+                <li><a href="sass.html ">wishlist</a></li>
+                <li><a href="badges.html ">store</a></li>
+                <li><a href="collapsible.html ">account</a></li>
+                <li><a href="mobile.html ">bag</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">New</a></li>
-        <li><a href="badges.html">Furniture</a></li>
-        <li><a href="collapsible.html">Sofas & Armchair</a></li>
-        <li><a href="mobile.html">Lighting</a></lti>
-            <li><a href="mobile.html">Soft furnishings</a></li>
-            <li><a href="mobile.html">Accessories</a></li>
-            <li><a href="mobile.html">Kitchen</a></li>
-            <li><a href="mobile.html">Offers</a></li>
+        <li><a href="sass.html ">New</a></li>
+        <li><a href="badges.html ">Furniture</a></li>
+        <li><a href="collapsible.html ">Sofas & Armchair</a></li>
+        <li><a href="mobile.html ">Lighting</a></li>
+        <li><a href="mobile.html ">Soft furnishings</a></li>
+        <li><a href="mobile.html ">Accessories</a></li>
+        <li><a href="mobile.html ">Kitchen</a></li>
+        <li><a href="mobile.html ">Offers</a></li>
     </ul>
-    <div class="nav-content hide-on-small-only">
-        <div class="container">
+    <div class="nav-content hide-on-small-only ">
+        <div class="container ">
             <ul class="tabs tabs-transparent ">
-                <li class="tab"><a href="#test1" style="color: black; font-size: 12px; text-transform: none">New</a>
+                <li class="tab "><a href="#test1 " style="color: black; font-size: 12px; text-transform: none ">New</a>
                 </li>
-                <li class="tab"><a href="#test2" style="color: black; font-size: 12px; text-transform: none">Furniture</a></li>
-                <li class="tab" style="width: 15%;"><a href="#test3" style="color: black; font-size: 12px; text-transform: none">Sofas &
+                <li class="tab "><a href="#test2 " style="color: black; font-size: 12px; text-transform: none ">Furniture</a></li>
+                <li class="tab " style="width: 15%; "><a href="#test3 " style="color: black; font-size: 12px; text-transform: none ">Sofas &
                         Armchairs</a></li>
-                <li class="tab"><a href="#test4" style="color: black; font-size: 12px; text-transform: none">Lighting</a></li>
-                <li class="tab" style="width: 15%;"><a href="#test4" style="color: black; font-size: 12px; text-transform: none">Soft
+                <li class="tab "><a href="#test4 " style="color: black; font-size: 12px; text-transform: none ">Lighting</a></li>
+                <li class="tab " style="width: 15%; "><a href="#test4 " style="color: black; font-size: 12px; text-transform: none ">Soft
                         furnishings</a></li>
-                <li class="tab"><a href="#test4" style="color: black; font-size: 12px; text-transform: none">Accsessories</a></li>
-                <li class="tab"><a href="#test4" style="color: black; font-size: 12px; text-transform: none">Kitchen</a>
+                <li class="tab "><a href="#test4 " style="color: black; font-size: 12px; text-transform: none ">Accsessories</a></li>
+                <li class="tab "><a href="#test4 " style="color: black; font-size: 12px; text-transform: none ">Kitchen</a>
                 </li>
-                <li class="tab"><a href="#test4" style="color: black; font-size: 12px; text-transform: none">Offers</a>
+                <li class="tab "><a href="#test4 " style="color: black; font-size: 12px; text-transform: none ">Offers</a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="container hide-on-small-only">
-        <div class="row" style="margin: 0;">
-            <div class="col m6" style="border-right: 1px rgba(34, 34, 34, 0.2) solid;">
-                <h5 style="float: right;">sign up to our newsletter for $10 off $75</h5>
+    <div class="container hide-on-small-only ">
+        <div class="row " style="margin: 0; ">
+            <div class="col m6 " style="border-right: 1px rgba(34, 34, 34, 0.2) solid; ">
+                <h5 style="float: right; ">sign up to our newsletter for $10 off $75</h5>
             </div>
             <div class="divi "></div>
             <div class="col m6 ">
@@ -68,100 +77,100 @@
             </div>
         </div>
     </div>
-    <div class="container hide-on-med-and-up">
-        <h5 style="text-align:center">sign up to our newsletter for $10 off $75</h5>
+    <div class="container hide-on-med-and-up ">
+        <h5 style="text-align:center ">sign up to our newsletter for $10 off $75</h5>
     </div>
-    <div class="divider" style="margin-bottom: 10px;"></div>
-    <div class="container">
-        <div class="carousel carousel-slider">
-            <a class="carousel-item" href="#one!">
-                <img src="https://lorempixel.com/800/400/food/1">
+    <div class="divider " style="margin-bottom: 10px; "></div>
+    <div class="container ">
+        <div class="carousel carousel-slider ">
+            <a class="carousel-item " href="#one! ">
+                <img src="https://lorempixel.com/800/400/food/1 ">
             </a>
-            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+            <a class="carousel-item " href="#two! "><img src="https://lorempixel.com/800/400/food/2 "></a>
+            <a class="carousel-item " href="#three! "><img src="https://lorempixel.com/800/400/food/3 "></a>
+            <a class="carousel-item " href="#four! "><img src="https://lorempixel.com/800/400/food/4 "></a>
         </div>
     </div>
-    <div class="container hide-on-small-only">
-        <ul class="row" style="text-align: center; margin: 10px 0px 10px 0;">
-            <li class="col m4">
-                <a href="#">
-                    <p class="head">Original Desings</p>
+    <div class="container hide-on-small-only ">
+        <ul class="row " style="text-align: center; margin: 10px 0px 10px 0; ">
+            <li class="col m4 ">
+                <a href="# ">
+                    <p class="head ">Original Desings</p>
                     <p>from our in-house designer</p>
                 </a>
             </li>
-            <li class="col m4">
-                <a href="#">
-                    <p class="head">Free delivery</p>
+            <li class="col m4 ">
+                <a href="# ">
+                    <p class="head ">Free delivery</p>
                     <p>on 100's of lines</p>
                 </a>
             </li>
-            <li class="col m4">
-                <a href="#">
-                    <p class="head">habitat herutage</p>
+            <li class="col m4 ">
+                <a href="# ">
+                    <p class="head ">habitat herutage</p>
                     <p>55 years of innovation</p>
                 </a>
             </li>
         </ul>
-        <div class="divider"></div>
+        <div class="divider "></div>
     </div>
-    <div class="container">
-        <ul class="row btn-1" style="text-align: center;">
-            <li class="col s6 m4" style="margin-bottom: 15px; height: ;"><img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg" style="width: 100%;">
-                <p class="head-1">Get served</p>
+    <div class="container ">
+        <ul class="row btn-1 " style="text-align: center; ">
+            <li class="col s6 m6 l4" style="margin-bottom: 15px; height: 100%; "><img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " style="width: 100%; ">
+                <p class="head-1 ">Get served</p>
                 <p>Must-have dining furniture</p>
-                <a class="waves-effect waves-light btn">
+                <a class="waves-effect waves-light btn ">
                     Shop dinning room
                 </a>
             </li>
-            <li class="col s6 m4" style="margin-bottom: 15px; height: ;"><img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp2-min.jpg" style="width: 100%;">
-                <p class="head-1">Get served</p>
+            <li class="col s6 m6 l4" style="margin-bottom: 15px; height: 100%; "><img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp2-min.jpg " style="width: 100%; ">
+                <p class="head-1 ">Get served</p>
                 <p>Must-have dining furniture</p>
-                <a class="waves-effect waves-light btn">shop dinnerware</a>
+                <a class="waves-effect waves-light btn ">shop dinnerware</a>
             </li>
-            <li class="col s12 m4" style="background-color: rgb(248, 237, 237); height: ;">
-                <p class="head-1" style="margin: 30px 0 10px 0">New In!</p>
-                <div class="carousel carousel-slider">
-                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1" style="height: 300px;"></a>
-                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2" style="height: 300px;"></a>
-                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3" style="height: 300px;"></a>
-                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4" style="height: 300px;"></a>
+            <li class="col s12 m12 l4" style="background-color: rgb(248, 237, 237); height: 100%; ">
+                <p class="head-1 " style="margin: 10px 0 10px 0 ">New In!</p>
+                <div class="carousel carousel-slider " style="">
+                    <a class="carousel-item " href="#one! "><img src="https://lorempixel.com/800/400/food/1 " style="height: 350px; "></a>
+                    <a class="carousel-item " href="#two! "><img src="https://lorempixel.com/800/400/food/2 " style="height: 350px; "></a>
+                    <a class="carousel-item " href="#three! "><img src="https://lorempixel.com/800/400/food/3 " style="height: 350px; "></a>
+                    <a class="carousel-item " href="#four! "><img src="https://lorempixel.com/800/400/food/4 " style="height: 350px; "></a>
                 </div>
-                <u class="shopnow" style="margin: 10px 0 10px 0">shop now</u>
+                <u class="shopnow " style="margin: 10px 0 10px 0 ">shop now</u>
             </li>
         </ul>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m5">
-                <img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg" alt="" style="width: 100%;height: 400px;">
+    <div class="container ">
+        <div class="row ">
+            <div class="col s12 m5 ">
+                <img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " alt=" " style="width: 100%;height: 400px; ">
             </div>
-            <div class="col s12 m7">
-                <img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg" alt="" style="width: 100%; height: 400px;">
+            <div class="col s12 m7 ">
+                <img src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " alt=" " style="width: 100%; height: 400px; ">
             </div>
         </div>
-        <div class="divider"></div>
+        <div class="divider "></div>
     </div>
-    <div class="container">
-        <h4 style="text-align: center;">New In!</h4>
-        <div class="row" style="text-align: center;">
-            <div class="col s12 m3">
+    <div class="container ">
+        <h4 style="text-align: center; ">New In!</h4>
+        <div class="row " style="text-align: center; ">
+            <div class="col s12 m3 ">
                 <div class="ho-ver ">
-                    <img class="img-show" style="width: 100%;height: 300px;" src="https://cdn.habitat.co.uk/media/catalog/product/cache/1/habitat_hover_image/183x/9df78eab33525d08d6e5fb8d27136e95/1/7/1788942_hover.jpg">
-                    <img class="img-dis" src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg" alt="" style="width: 100%;height: 300px;">
+                    <img class="img-show " style="width: 100%;height: 300px; " src="https://cdn.habitat.co.uk/media/catalog/product/cache/1/habitat_hover_image/183x/9df78eab33525d08d6e5fb8d27136e95/1/7/1788942_hover.jpg ">
+                    <img class="img-dis " src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " alt=" " style="width: 100%;height: 300px; ">
                 </div>
-                <p class="head-1">Sol</p>
+                <p class="head-1 ">Sol</p>
                 <p>Orange upholstered double bed frame 135cm</p>
-                <p class="money">$395</p>
+                <p class="money ">$395</p>
             </div>
-            <div class="col s12 m3">
+            <div class="col s12 m3 ">
                 <div class="ho-ver ">
                     <img class=" img-show " style="width: 100%;height: 300px; " src="https://cdn.habitat.co.uk/media/catalog/product/cache/1/habitat_hover_image/183x/9df78eab33525d08d6e5fb8d27136e95/1/7/1788942_hover.jpg ">
                     <img class="img-dis " src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " alt=" " style="width: 100%;height: 300px; ">
                 </div>
                 <p class="head-1 ">Sol</p>
                 <p>Orange upholstered double bed frame 135cm</p>
-                <p class="money">$395</p>
+                <p class="money ">$395</p>
             </div>
             <div class="col s12 m3 ">
                 <div class="ho-ver ">
@@ -170,54 +179,55 @@
                 </div>
                 <p class="head-1 ">Sol</p>
                 <p>Orange upholstered double bed frame 135cm</p>
-                <p class="money">$395</p>
+                <p class="money ">$395</p>
             </div>
-            <div class="col s12 m3">
+            <div class="col s12 m3 ">
                 <div class="ho-ver ">
                     <img class="img-show " style="width: 100%;height: 300px; " src="https://cdn.habitat.co.uk/media/catalog/product/cache/1/habitat_hover_image/183x/9df78eab33525d08d6e5fb8d27136e95/1/7/1788942_hover.jpg ">
                     <img class="img-dis " src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/100920-hp1-min.jpg " alt=" " style="width: 100%;height: 300px; ">
                 </div>
                 <p class="head-1 ">Sol</p>
                 <p>Orange upholstered double bed frame 135cm</p>
-                <p class="money">$395</p>
+                <p class="money ">$395</p>
             </div>
         </div>
-        <div class="divider"></div>
+        <div class="divider "></div>
     </div>
-    <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col s12 m6 blog" style="margin-bottom:100px">
+    <div class="container " style="margin-top: 50px; ">
+        <div class="row ">
+            <div class="col s12 m6 blog " style="margin-bottom:100px ">
                 <h4>the habitat blog</h4>
                 <p>
                     Looking for interiors ideas? Be inspired by our trend round-ups, expert advice and envy-inducing Original Habitat series in which we take a peek inside some of the coolest homes out there.
                 </p>
-                <div class="img1">
-                    <img style="width: 100%;" class="" src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/110820-blg1-min.jpg">
-                    <div class="descrip">
+                <div class="img1 ">
+                    <img style="width: 100%; " class=" " src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/110820-blg1-min.jpg ">
+                    <div class="descrip ">
                         <h6>Which Decorating Decade Are You</h6>
                         <p>To celebrate almost 6 decades since Habitat started trading, we've taken a trip down memory lane and looked at how the UK’s living room styles have changed from the 60s till now.</p>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 img2" style="margin-bottom:100px">
-                <img style="width: 100%;height: 400px;" src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/110820-blg2-min.jpg">
-                <div class="descrip1">
+            <div class="col s12 m6 img2 " style="margin-bottom:100px ">
+                <img style="width: 100%;height: 400px; " src="https://cdn.habitat.co.uk/skin/frontend/habitat/base/content/assets/images/home/110820-blg2-min.jpg ">
+                <div class="descrip1 ">
                     <h6>Which Decorating Decade Are You</h6>
                     <p>Whether earthy pigments are your thing or you have a penchant for patterns, click here for some serious design inspo.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div style="background-color:rgb(231, 240, 237);">
-        <div class="row">
-            <div class="col s12 m4"></div>
-            <div class="col s12 m4">
-                <form style="margin: 10px 0 10px 0">
-                    <div class="row" style="margin:0">
-                        <div class="input-field col s8" style="margin: 0px 0 0px 0; padding: 0;">
-                            <input placeholder="Join our newletters and discount" id="first_name" type="text" class="validate" style="margin:0; height: 40px; background-color: white; border:solid 1px black; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+    <div style="background-color:rgb(231, 240, 237); ">
+        <div class="row ">
+            <div class="col s12 m4 "></div>
+            <div class="col s12 m4 ">
+                <form style="margin: 10px 0 10px 0 ">
+                    <div class="row " style="margin:0 ">
+                        <div class="input-field col s8 " style="margin: 0px 0 0px 0; padding: 0; ">
+                            <input placeholder="Join our newletters and discount " id="first_name " type="text " class="validate " style="padding:0; margin:0; width:100%; height: 40px; background-color: white; border:solid 1px black; border-top-left-radius: 5px; border-bottom-left-radius:
+                    5px; ">
                         </div>
-                        <a class="waves-effect waves-light btn col s4" style="padding: 0;margin-top: 0px;height: 42px; line-height: 42px; background-color: black; font-weight: 600; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">SIGN
+                        <a class="waves-effect waves-light btn col s4 " style="padding: 0;margin-top: 0px;height: 41px; line-height: 41px; background-color: black; font-weight: 600; border-top-right-radius: 5px; border-bottom-right-radius: 5px; box-shadow: none;">SIGN
                             UP</a>
                     </div>
                 </form>
@@ -227,9 +237,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row footer-1" style="width:90%">
-            <div class="col s12 m3" style="border-right: 1px solid rgba(22,22,22,0.1)">
+    <div class="container ">
+        <div class="row footer-1 " style="width:100%; margin: 0;">
+            <div class="col s12 m3 " style="border-right: 1px solid rgba(22,22,22,0.1) ">
                 <h3>Shopping With Us</h3>
                 <ul>
                     <li>Covid-19 - stores reopening</li>
@@ -240,7 +250,7 @@
                     <li>Terms & Conditions</li>
                 </ul>
             </div>
-            <div class="col s12 m3" style="border-right: 1px solid rgba(22,22,22,0.1)">
+            <div class="col s12 m3 " style="border-right: 1px solid rgba(22,22,22,0.1) ">
                 <h3>Have A Question?</h3>
                 <ul>
                     <li>Covid-19 FAQs</li>
@@ -252,7 +262,7 @@
                     <li>Cookie Settings</li>
                 </ul>
             </div>
-            <div class="col s12 m3" style="border-right: 1px solid rgba(22,22,22,0.1)">
+            <div class="col s12 m3 " style="border-right: 1px solid rgba(22,22,22,0.1) ">
                 <h3>About Habitat</h3>
                 <ul>
                     <li>Blog</li>
@@ -263,7 +273,7 @@
                     <li>Sainsburys.co.uk</li>
                 </ul>
             </div>
-            <div class="col s12 m3">
+            <div class="col s12 m3 ">
                 <h3>Join Us</h3>
                 <ul>
                     <li>Newsletter Sign Up</li>
@@ -273,9 +283,18 @@
             </div>
         </div>
     </div>
+    <div style="background-color:rgb(231, 240, 237); height: 20px;">
+    </div>
+    <div class="container" style="text-align: center; font-size: 12px;">
+        <p><u>Terms and conditions</u> apply. We never send out unsolicited emails. You can unsubscribe at any time. To help us improve the emails we send you we collect information such as when they are opened and what you clicked on. For more information
+            on how we use your personal details please refer to our <u>Privacy Policy</u> and <u>Cookie Policy</u>.
+        </p>
+        <p style="width: 60%; text-align: center; margin: auto; margin-bottom: 20px;">Registered office: Habitat Retail Ltd, 489-499 Avebury Boulevard, Milton Keynes, MK9 2NW © 2020 Habitat. All Rights reserved. Company registration no: 7445750. VAT no: 660 4548 36.</p>
+
+    </div>
     <!--================================================================================1-->
     <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/js/main.js "></script>
 </body>
 
