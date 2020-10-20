@@ -1,18 +1,55 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <script type="text/javascript">
-        <!--
-        function sayHello() {
-            alert("Hello World")
-        }
-        //-->
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Be Vietnam:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
-<body>
-    Click here for the result
-    <input type="button" onclick="sayHello()" value="Say Hello" />
+<body ng-app="uudaiso" ng-controller="uudaisoCtrl">
+
+    <nav style="background-color: rgb(35, 31, 32); box-shadow: none;">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">ƯUĐÃISỐ.VN</a>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li ng-show="show1">
+                    <form class="col s12">
+                        <div class="row" style="margin-bottom: 0 !important;">
+                            <div class="input-field col s12">
+                                <input id="icon_prefix" type="text" placeholder="tìm kiêms" class="validate" style="background-color: rgb(79, 76, 77); border-radius: 8px; color: white;">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li><i class="material-icons prefix" ng-click="openFunc()">search</i></li>
+                <li><a href="sass.html ">wishlist</a></li>
+                <li><a href="badges.html ">store</a></li>
+                <li><a href="collapsible.html ">account</a></li>
+                <li><a href="mobile.html ">bag</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <h2>{{count}} dsdsds</h2>
+    <!--================================================================================1-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+    </script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
